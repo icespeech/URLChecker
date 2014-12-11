@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">URLChecker</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    
+    <!-- MainActivity -->
+    <string name="check_prompt">請輸入欲檢查網址：</string>
+    <string name="check_url">檢查</string>
+    
+    <!-- URLCheckActivity -->
+    <string name="check_activity_label">短網址檢查器</string>
+    <string name="origin_url_prompt">原始URL:</string>
+    <string name="webhost_prompt">網址站台：</string>
+    <string name="mimetype_prompt">檔案類型：</string>
+    
+    <!-- Intent Keys -->
+    <string name="intent_key_url">KEY_URL</string>
+    
+    <!-- Backend Strings -->
+    <string name="backend_server_url">http://people.cs.nctu.edu.tw/~bfjiang/chopURL.php</string>
+    <string name="backend_post_token">url</string>
+    
+    <!-- JSON Keys -->
+    <string name="json_key_url">URL</string>
+    <string name="json_key_webhost">WebHost</string>
+    <string name="json_key_mimetype">Type</string>
+    <string name="btn_ok">好</string>
+    <string name="open_with_browsers">用瀏覽器開啟</string>
 </resources>

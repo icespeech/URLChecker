@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_origin_url_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/origin_url_prompt" />
+
+    <TextView
+        android:id="@+id/tv_origin_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_origin_url_prompt"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_webhost_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_origin_url"
+        android:layout_marginTop="20dp"
+        android:text="@string/webhost_prompt" />
+
+    <TextView
+        android:id="@+id/tv_webhost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_webhost_prompt"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_mimetype_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_webhost"
+        android:layout_marginTop="20dp"
+        android:text="@string/mimetype_prompt" />
+
+    <TextView
+        android:id="@+id/tv_mimetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_mimetype_prompt"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonHolder"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/tv_mimetype"
+        >
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_ok" />
+
+        <Button
+            android:id="@+id/btn_open_with_browsers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/open_with_browsers" />
+
+    </LinearLayout>
+
+</RelativeLayout>
